@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_stone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="#FAE6FD"
+        android:rotation="10"
+        android:text="石頭"
+        android:textColor="#673AB7"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_scissor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-5dp"
+        android:background="#C4DEFF"
+        android:rotation="-40"
+        android:text="剪刀"
+        android:textColor="#E30000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/title_stone"
+        app:layout_constraintEnd_toStartOf="@+id/title_stone" />
+
+    <TextView
+        android:id="@+id/title_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CDD3CC"
+        android:rotation="30"
+        android:text="布！"
+        android:textColor="#008377"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_stone"
+        app:layout_constraintStart_toEndOf="@+id/title_stone" />
+
+    <TextView
+        android:id="@+id/title_EZG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:rotation="10"
+        android:text="！簡單小遊戲！"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_stone"
+        app:layout_constraintStart_toStartOf="@+id/title_stone"
+        app:layout_constraintTop_toBottomOf="@+id/title_stone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
